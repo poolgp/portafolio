@@ -16,7 +16,6 @@ a {
 }
 
 .card-img-top{
-    background-image: cover;
-    /* width: 280px;
-    height: 180px; */
+    width: 280px;
+    height: 180px;
 }
