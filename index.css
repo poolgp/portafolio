@@ -7,6 +7,15 @@
   justify-content: space-around;
 }
 
+header a{
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+
 /* .cards{
     margin: 40px;
     border: solid black 2px;
