@@ -15,11 +15,8 @@ a {
     color: black;
 }
 
-
-/* .cards{
-    margin: 40px;
-    border: solid black 2px;
-    width: 90%;
-    display: flex;
-    height: auto;
-} */
+.card-img-top{
+    background-image: cover;
+    /* width: 280px;
+    height: 180px; */
+}
