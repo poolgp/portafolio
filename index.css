@@ -7,20 +7,31 @@
   justify-content: space-around;
 }
 
-header a{
-    text-decoration: none;
+header a {
+  text-decoration: none;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
-.card-img-top{
-    height: 180px;
-    width: 100%;
+.cartas {
+  display: flex;
+  flex-direction: row;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
+.card{
+    margin: 40px;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+i {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
