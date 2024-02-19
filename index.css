@@ -18,10 +18,16 @@ a {
 .cartas {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card{
     margin: 40px;
+}
+
+.card-img-top{
+    height: 280px;
+    width: 100%;
 }
 
 .list-group {
