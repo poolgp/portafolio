@@ -21,13 +21,13 @@ a {
   flex-wrap: wrap;
 }
 
-.card{
-    margin: 40px;
+.card {
+  margin: 40px;
 }
 
-.card-img-top{
-    height: 280px;
-    width: 100%;
+.card-img-top {
+  height: 280px;
+  width: 100%;
 }
 
 .list-group {
