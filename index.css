@@ -19,3 +19,8 @@ a {
     height: 180px;
     width: 100%;
 }
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
