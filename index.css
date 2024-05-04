@@ -11,11 +11,23 @@
   margin: 0px;
   padding: 0px;
 }
-nav.navbar{
+
+body {
+  background-color: #252525;
+  scrollbar-width: none;
+}
+
+header {
   background-color: #252525;
 }
+
+nav.navbar {
+  background-color: #252525;
+  box-shadow: 0px 10px 14px rgba(252, 207, 0, 1);
+}
+
 a.imgLogoa {
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 img.imgLogoNav {
@@ -24,7 +36,7 @@ img.imgLogoNav {
 }
 
 div.menuDiv {
-  margin-right: 120px;
+  margin-right: 150px;
 }
 
 li.nav-item {
@@ -36,4 +48,33 @@ span.textoSpan {
   font-weight: 500;
   font-size: 20px;
   color: #fccf00;
+}
+
+main {
+  background-color: #373737;
+}
+
+/* Estilos de las secciones */
+.section {
+  padding: 50px;
+  color: white;
+}
+
+/* Estilos específicos para cada sección */
+#quienSoy {
+  background-color: #333;
+}
+
+#habilidades {
+  background-color: #444;
+}
+
+#proyectos {
+  background-color: #555;
+}
+
+
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
 }
