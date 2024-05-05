@@ -1,10 +1,7 @@
-/* Importar la fuente Oswald */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
-/* Importar la fuente Lora */
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
-/* Importar la fuente PT Sans Caption */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
 
 * {
@@ -12,69 +9,31 @@
   padding: 0px;
 }
 
-body {
+.navbar {
   background-color: #252525;
-  scrollbar-width: none;
-}
-
-header {
-  background-color: #252525;
-}
-
-nav.navbar {
-  background-color: #252525;
-  box-shadow: 0px 10px 14px rgba(252, 207, 0, 1);
-}
-
-a.imgLogoa {
-  margin-left: 150px;
-}
-
-img.imgLogoNav {
-  height: 120px;
+  height: 125px;
   width: auto;
 }
 
-div.menuDiv {
-  margin-right: 150px;
+.navbar-logo {
+  height: 125px;
+  width: auto;
 }
 
-li.nav-item {
-  margin: 15px;
+.navbar-brand img {
+  height: 100%;
 }
 
-span.textoSpan {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+.navbar-nav .nav-link {
   color: #fccf00;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
 }
 
-main {
-  background-color: #373737;
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 20px;
 }
 
-/* Estilos de las secciones */
-.section {
-  padding: 50px;
-  color: white;
-}
-
-/* Estilos específicos para cada sección */
-#quienSoy {
-  background-color: #333;
-}
-
-#habilidades {
-  background-color: #444;
-}
-
-#proyectos {
-  background-color: #555;
-}
-
-
-/* Para navegadores WebKit (Chrome, Safari, Edge) */
-::-webkit-scrollbar {
-  display: none;
+main{
+  margin-top: 125px;
 }
