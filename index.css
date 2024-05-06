@@ -10,7 +10,7 @@
 }
 
 .navbar {
-  background-color: #252525;
+  /* background-color: #252525; */
   height: 125px;
   width: auto;
 }
@@ -34,6 +34,11 @@
   margin-right: 20px;
 }
 
-main{
+main {
+  margin-top: 125px; /* Igual a la altura de la barra de navegación */
+}
+
+div.contenidoMain {
   margin-top: 125px;
+  background-color: red;
 }
