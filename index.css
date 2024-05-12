@@ -9,36 +9,25 @@
   padding: 0px;
 }
 
-.navbar {
-  /* background-color: #252525; */
-  height: 125px;
-  width: auto;
+nav.navbar.navbar-expand-lg {
+  background-color: #252525;
+  height: 150px;
+  width: 100%;
+
 }
 
-.navbar-logo {
-  height: 125px;
-  width: auto;
-}
-
-.navbar-brand img {
+a.navbar-brand {
   height: 100%;
+  width: 100%;
+  margin: 0px;
 }
 
-.navbar-nav .nav-link {
+img.logoPortafolio {
+  height: 150px;
+}
+
+a.nav-link {
   color: #fccf00;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-}
-
-.navbar-nav .nav-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-main {
-  margin-top: 125px; /* Igual a la altura de la barra de navegación */
-}
-
-div.contenidoMain {
-  margin-top: 125px;
-  background-color: red;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
 }
