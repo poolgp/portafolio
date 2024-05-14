@@ -9,25 +9,37 @@
   padding: 0px;
 }
 
-nav.navbar.navbar-expand-lg {
+nav.navbar {
   background-color: #252525;
-  height: 150px;
-  width: 100%;
-
 }
 
 a.navbar-brand {
+  margin: 0px;
+  padding: 0px;
   height: 100%;
   width: 100%;
-  margin: 0px;
 }
 
-img.logoPortafolio {
-  height: 150px;
-}
-
-a.nav-link {
+.navbar-nav .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
   color: #fccf00;
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
+}
+
+div#inicio {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+div.miPresentacionDiv {
+  background-color: orange;
+  height: 600px;
+}
+
+div.flechaDiv {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
