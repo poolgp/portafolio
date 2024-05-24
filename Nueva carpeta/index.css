@@ -4,8 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav.navbar {
@@ -15,6 +16,7 @@ nav.navbar {
 a.nav-link.mx-3 {
   color: #fccf00;
   font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
 a.nav-link.mx-3:hover {
@@ -32,33 +34,36 @@ i.fas.fa-bars {
   font-size: 30px;
 }
 
-/* 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "PT Sans Caption", sans-serif;
-  color: #333;
-}
-
 section {
+  height: 600px;
   padding: 60px 0;
   text-align: center;
+  background-color: #282828;
 }
 
-.container {
+h1.tituloSection {
+  color: #fccf00;
+  margin: 20px;
+  font-family: "Lora", sans-serif;
+}
+
+.container.proyectos {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 500px;
-  gap: 10px;
+  height: 400px;
+  gap: 20px;
 }
 
-.container > div {
+.container.proyectos > div:nth-of-type(1) {
+  background: url("img/CPropinas.png") no-repeat 50% / cover;
+}
+
+.container.proyectos > div:nth-of-type(2) {
+  background: url("img/Penjat.png") no-repeat 50% / cover;
+}
+
+.container.proyectos > div {
   flex: 0 0 120px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
@@ -68,15 +73,7 @@ section {
   overflow: hidden;
 }
 
-.container > div:nth-of-type(1) {
-  background: url("img/CPropinas.png") no-repeat 50% / cover;
-}
-
-.container > div:nth-of-type(2) {
-  background: url("img/Penjat.png") no-repeat 50% / cover;
-}
-
-.container .content {
+.container.proyectos .content {
   font-size: 1.5rem;
   color: #fff;
   display: flex;
@@ -97,14 +94,14 @@ section {
   visibility: hidden;
 }
 
-.container > div:hover {
+.container.proyectos > div:hover {
   flex: 0 0 250px;
   box-shadow: 1px 3px 15px #7645d8;
-  transform: translateY(-30px);
+  /* transform: translateY(-30px); */
 }
 
-.container > div:hover .content {
+.container.proyectos > div:hover .content {
   opacity: 1;
   transform: translateY(0%);
   visibility: visible;
-} */
+}
