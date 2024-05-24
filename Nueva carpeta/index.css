@@ -35,8 +35,9 @@ i.fas.fa-bars {
 }
 
 section {
-  height: 600px;
-  padding: 60px 0;
+  height: 100vh;
+  height: 700px;
+  padding: 150px 0;
   text-align: center;
   background-color: #282828;
 }
@@ -64,7 +65,7 @@ h1.tituloSection {
 }
 
 .container.proyectos > div {
-  flex: 0 0 120px;
+  flex: 0 0 150px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -95,8 +96,8 @@ h1.tituloSection {
 }
 
 .container.proyectos > div:hover {
-  flex: 0 0 250px;
-  box-shadow: 1px 3px 15px #7645d8;
+  flex: 0 0 300px;
+  box-shadow: 1px 3px 15px #fccf00;
   /* transform: translateY(-30px); */
 }
 
