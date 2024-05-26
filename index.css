@@ -9,10 +9,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 nav.navbar {
   background-color: #252525;
 }
@@ -20,7 +16,7 @@ nav.navbar {
 a.nav-link.mx-3 {
   color: #fccf00;
   font-size: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Lora", sans-serif;
 }
 
 a.nav-link.mx-3:hover {
@@ -49,7 +45,80 @@ section {
 h1.tituloSection {
   color: #fccf00;
   margin: 20px;
-  font-family: "Lora", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+h2,
+h4 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.mvv {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.carta-box {
+  height: 200px;
+  width: 325px;
+  padding: 15px;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #fccf00;
+  box-shadow: 0 0 10px #fccf00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carta-box:hover .carta {
+  transform: rotateY(180deg);
+}
+
+.carta {
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+}
+
+.cara {
+  height: 200px;
+  width: 300px;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.cara.detras {
+  transform: rotateY(180deg);
+}
+
+.saberMas {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.saberMasA {
+  height: 60px;
+  width: 250px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-caption {
@@ -73,15 +142,15 @@ h1.tituloSection {
   gap: 20px;
 }
 
-.container.proyectos>div:nth-of-type(1) {
+.container.proyectos > div:nth-of-type(1) {
   background: url("img/CPropinas.png") no-repeat 50% / cover;
 }
 
-.container.proyectos>div:nth-of-type(2) {
+.container.proyectos > div:nth-of-type(2) {
   background: url("img/Penjat.png") no-repeat 50% / cover;
 }
 
-.container.proyectos>div {
+.container.proyectos > div {
   flex: 0 0 150px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
@@ -102,68 +171,47 @@ h1.tituloSection {
   height: 100%;
   justify-content: flex-end;
   background: rgb(2, 2, 46);
-  background: linear-gradient(0deg,
-      rgba(2, 2, 46, 0.6755077030812324) 0%,
-      rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 2, 46, 0.6755077030812324) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   transform: translateY(100%);
   transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
   visibility: hidden;
 }
 
-.container.proyectos>div:hover {
+.container.proyectos > div:hover {
   flex: 0 0 300px;
   box-shadow: 1px 3px 15px #fccf00;
   /* transform: translateY(-30px); */
 }
 
-.container.proyectos>div:hover .content {
+.container.proyectos > div:hover .content {
   opacity: 1;
   transform: translateY(0%);
   visibility: visible;
 }
 
-.mvv {
-  height: 100%;
-  width: 100%;
+.sobreMiTitulo {
+  height: auto;
+  width: auto;
+  margin-top: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-
-.carta-box {
-  width: 300px;
-  height: 200px;
-  /* position: relative; */
-  /* perspective: 1000px; */
-  background-image: url("img/Fondo.svg");
-  color: white;
-  border: 2px solid #fccf00;
-  box-shadow: 0 0 10px #fccf00;
-}
-
-.carta-box:hover .carta {
-  transform: rotateY(180deg);
-}
-
-.carta {
-  transform-style: preserve-3d;
-  transition: all 0.5s linear;
-  position: relative;
-}
-
-.cara {
-  position: absolute;
-  backface-visibility: hidden;
-  width: 100%;
-  height: 100%;
-  display: flex;
   justify-content: center;
-  /* Centra horizontalmente */
-  align-items: center;
-  /* Centra verticalmente */
-
 }
 
-.cara.detras {
-  transform: rotateY(180deg);
+.sobreMi {
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.botonesVideo {
+  margin: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
 }
