@@ -37,25 +37,43 @@
             </div>
         </div>
     </nav>
+
     <div class="sobreMiTitulo">
         <h1 class="tituloSection">Sobre mí</h1>
     </div>
 
-    <div class="container">
-        <div class="sobreMi">
-            <div class="video">
-                <div class="videoMP4">
-                    <video src="./img/videoplayback.mp4"></video>
+    <div class="sobreMi mt-5">
+        <div class="video">
+            <div class="videoMP4">
+                <video id="videoPlayer" controls controlsList="nodownload">
+                    <source src="./img/videoplayback.mp4" type="video/mp4" id="mainVideo">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="botonesVideo" style="display: none;">
+                <button id="btn01Btn">01 - BD Documentals</button>
+                <button id="btn02Btn">02 - Arquitect. SQL</button>
+                <button id="btn03Btn">03 - Creació Estructura Dades</button>
+            </div>
+        </div>
+        <div class="infoPersonal">
+            <div class="tituloPersonal">
+                <h2>Pol Garcia Palau</h2>
+            </div>
+            <div class="cuerpoMi mt-5">
+                <div class="experiencia col-md-8">
+                    <h4 class="experienciah4">Experiencia:</h4>
+                    <a href="https://cleverbsolutions.com" target="_blank">
+                        <img src="./img/cbs.png" alt="Logo de la Empresa" class="empresa-img">
+                    </a>
                 </div>
-                <div class="botonesVideo">
-                    <button id="playPauseBtn"><i class="fas fa-play"></i></button>
-                    <button id="indiceBtn">Índice</button>
-                    <button id="nudoBtn">Nudo</button>
-                    <button id="desenlaceBtn">Desenlace</button>
-                    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+                <div class="cv col-md-4">
+                    <a href="./PolGarciaPalauCV.pdf" id="downloadBtn" download>
+                        <i class="fas fa-download"></i>
+                        Descargar CV
+                    </a>
                 </div>
             </div>
-            <div class="infoPersonal">asd</div>
         </div>
     </div>
 

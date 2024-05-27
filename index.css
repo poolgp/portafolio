@@ -203,15 +203,132 @@ p {
 }
 
 .sobreMi {
-  background-color: orange;
   height: 100%;
-  width: 100%;
+  width: auto;
+  margin: 30px;
   display: flex;
 }
 
-.botonesVideo {
+.videoMP4 {
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  height: 100%;
+  width: calc(100% / 2);
+}
+
+.videoPlayer {
+  height: auto;
+  width: 100%;
+}
+
+div#botonesVideo {
   margin: 10px;
   display: flex;
-  align-content: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
+}
+
+button#btn01Btn,
+button#btn02Btn,
+button#btn03Btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fccf00;
+  color: #282828;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button#btn01Btn:hover,
+button#btn02Btn:hover,
+button#btn03Btn:hover {
+  background-color: #fff;
+  color: #fccf00;
+}
+
+.infoPersonal {
+  height: 100%;
+  width: calc(100% / 2);
+}
+
+div.tituloPersonal {
+  color: #fccf00;
+}
+
+.cuerpoMi {
+  display: flex;
+}
+
+.experiencia {
+  height: 100%;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#downloadBtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button#downloadBtn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a#downloadBtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a#downloadBtn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.empresa-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s;
+}
+
+.empresa-img:hover {
+  transform: scale(1.05);
+}
+
+.experienciah4{
+  color: white;
 }
