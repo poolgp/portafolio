@@ -143,11 +143,23 @@ p {
 }
 
 .container.proyectos > div:nth-of-type(1) {
-  background: url("img/CPropinas.png") no-repeat 50% / cover;
+  background: url("img/India.png") no-repeat 50% / cover;
 }
 
 .container.proyectos > div:nth-of-type(2) {
+  background: url("img/CPropinas.png") no-repeat 50% / cover;
+}
+
+.container.proyectos > div:nth-of-type(3) {
   background: url("img/Penjat.png") no-repeat 50% / cover;
+}
+
+.container.proyectos > div:nth-of-type(5) {
+  background: url("img/Pomodoro-task-manager.png") no-repeat 50% / cover;
+}
+
+.container.proyectos > div:nth-of-type(6) {
+  background: url("img/Restaurante.png") no-repeat 50% / cover;
 }
 
 .container.proyectos > div {
