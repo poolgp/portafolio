@@ -15,7 +15,7 @@
 </head>
 
 <body style="background-color: #282828;">
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo-pol-oro.svg" alt="Portafolio Logo" height="120px" width="120px">
@@ -27,9 +27,9 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="./index.html">
+                <ul class="navbar-nav ml-auto" role="menu">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link mx-3" href="./index.html" role="menuitem">
                             Home
                         </a>
                     </li>
@@ -38,22 +38,23 @@
         </div>
     </nav>
 
-    <div class="sobreMiTitulo">
+    <div class="sobreMiTitulo" role="heading" aria-level="1">
         <h1 class="tituloSection">Sobre mí</h1>
     </div>
 
     <div class="sobreMi mt-5">
-        <div class="video">
+        <div class="video" role="region" aria-labelledby="video-heading">
             <div class="videoMP4">
-                <video id="videoPlayer" controls controlsList="nodownload">
+                <video id="videoPlayer" controls controlsList="nodownload" aria-label="Main Video">
                     <source src="./img/videoplayback.mp4" type="video/mp4" id="mainVideo">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div id="botonesVideo" style="display: none;">
-                <button id="btn01Btn">01 - BD Documentals</button>
-                <button id="btn02Btn">02 - Arquitect. SQL</button>
-                <button id="btn03Btn">03 - Creació Estructura Dades</button>
+                <button id="btn01Btn" role="button" aria-label="01 - BD Documentals">01 - BD Documentals</button>
+                <button id="btn02Btn" role="button" aria-label="02 - Arquitect. SQL">02 - Arquitect. SQL</button>
+                <button id="btn03Btn" role="button" aria-label="03 - Creació Estructura Dades">03 - Creació Estructura
+                    Dades</button>
             </div>
         </div>
         <div class="infoPersonal">
@@ -68,7 +69,7 @@
                     </a>
                 </div>
                 <div class="cv col-md-4">
-                    <a href="./PolGarciaPalauCV.pdf" id="downloadBtn" download>
+                    <a href="./PolGarciaPalauCV.pdf" id="downloadBtn" download role="button" aria-label="Download CV">
                         <i class="fas fa-download"></i>
                         Descargar CV
                     </a>
