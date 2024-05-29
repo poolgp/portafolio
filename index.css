@@ -154,6 +154,10 @@ p {
   background: url("img/Penjat.png") no-repeat 50% / cover;
 }
 
+.container.proyectos > div:nth-of-type(4) {
+  background: url("img/enConstruccion.png") no-repeat 50% / cover;
+}
+
 .container.proyectos > div:nth-of-type(5) {
   background: url("img/Pomodoro-task-manager.png") no-repeat 50% / cover;
 }
