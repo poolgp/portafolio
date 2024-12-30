@@ -1,46 +1,143 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Lora&family=PT+Sans+Caption&display=swap"
-        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="presentacion"></div>
-
-    <nav class="navbar sticky-top bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sticky top</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
-
-    </nav>
-
 
     <!-- Hero Section -->
-    <!-- <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <header class="hero bg-dark text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">Bienvenido a Mi Portafolio</h1>
-            <p class="lead">Soy [Tu Nombre], un desarrollador apasionado</p>
-            <a href="portfolio.html" class="btn btn-primary btn-lg">Ver mi trabajo</a>
+            <h1 class="display-3">Welcome to My Portfolio</h1>
+            <p class="lead">I am a passionate Web Developer</p>
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
         </div>
-    </header> -->
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="profile.jpg" alt="Profile" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm a full-stack web developer with expertise in modern web technologies. I specialize in creating stunning, responsive, and user-friendly web applications.</p>
+                    <p>Technologies I use: HTML, CSS, JavaScript, React, Node.js, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Description of the project goes here.</p>
+                            <button class="btn btn-primary project-btn" data-project="1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">Description of the project goes here.</p>
+                            <button class="btn btn-primary project-btn" data-project="2">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Three</h5>
+                            <p class="card-text">Description of the project goes here.</p>
+                            <button class="btn btn-primary project-btn" data-project="3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+            <p>Follow me on 
+                <a href="#" class="text-white"><i class="fab fa-github"></i></a> 
+                <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
